@@ -105,5 +105,5 @@ npm run build-css
 ## 📞 ទំនាក់ទំនង
 
 ប្រសិនបើអ្នកមានសំណួរ ឬយោបល់ សូមទាក់ទងមកយើង៖
-- អ៊ីមែល: [your-email@example.com](mailto:your-email@example.com)
+- អ៊ីមែល: [your-email@example.com](mailto:phanphoun855@gmail.com)
 - GitHub: [phanphoun](https://github.com/phanphoun)
