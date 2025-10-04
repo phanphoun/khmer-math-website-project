@@ -636,6 +636,9 @@
   border-color: #4a6fa5;
   box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.1);
 }
+.contact-section .contact-form .form-group input::-moz-placeholder, .contact-section .contact-form .form-group textarea::-moz-placeholder {
+  color: #999;
+}
 .contact-section .contact-form .form-group input::placeholder, .contact-section .contact-form .form-group textarea::placeholder {
   color: #999;
 }
@@ -1058,5 +1061,3 @@ a:hover {
     color: #212529;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
