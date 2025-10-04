@@ -1,0 +1,272 @@
+// About Section
+.about-section {
+    padding: 6rem 0;
+    background-color: $light-color;
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: $primary-color;
+        font-size: 2.5rem;
+    }
+    
+    .about-content {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        
+        @include respond-to('md') {
+            flex-direction: column;
+        }
+    }
+    
+    .about-text {
+        flex: 1;
+        
+        h3 {
+            font-size: 1.8rem;
+            color: $secondary-color;
+            margin-bottom: 1.5rem;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: $text-color;
+        }
+    }
+    
+    .mission-vision {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+        
+        @include respond-to('sm') {
+            grid-template-columns: 1fr;
+        }
+        
+        .mission, .vision {
+            background: white;
+            padding: 1.5rem;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            
+            h4 {
+                color: $primary-color;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+            
+            p {
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+    
+    .about-image {
+        flex: 1;
+        border-radius: $border-radius;
+        overflow: hidden;
+        box-shadow: $box-shadow;
+        
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+
+// Contact Section
+.contact-section {
+    padding: 6rem 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: $primary-color;
+        font-size: 2.5rem;
+    }
+    
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 3rem;
+        
+        @include respond-to('md') {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    .contact-info {
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            
+            i {
+                font-size: 1.5rem;
+                color: $primary-color;
+                margin-right: 1.5rem;
+                margin-top: 0.5rem;
+            }
+            
+            h4 {
+                color: $secondary-color;
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+            }
+            
+            p {
+                margin: 0;
+                color: $text-color;
+                line-height: 1.6;
+            }
+        }
+    }
+    
+    .contact-form {
+        background: white;
+        padding: 2.5rem;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            
+            input, textarea {
+                width: 100%;
+                padding: 0.8rem 1rem;
+                border: 1px solid #ddd;
+                border-radius: $border-radius;
+                font-size: 1rem;
+                font-family: $khmer-font;
+                transition: border-color 0.3s ease;
+                
+                &:focus {
+                    outline: none;
+                    border-color: $primary-color;
+                    box-shadow: 0 0 0 3px rgba($primary-color, 0.1);
+                }
+                
+                &::placeholder {
+                    color: #999;
+                }
+            }
+            
+            textarea {
+                resize: vertical;
+                min-height: 120px;
+            }
+        }
+        
+        .btn-primary {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    }
+}
+
+// Footer
+.footer {
+    background-color: $dark-color;
+    color: white;
+    padding: 4rem 0 0;
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        margin-bottom: 3rem;
+        
+        @include respond-to('md') {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 50px;
+                height: 2px;
+                background-color: $accent-color;
+            }
+        }
+        
+        p, a {
+            color: rgba(white, 0.8);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            display: block;
+            transition: color 0.3s ease, padding-left 0.3s ease;
+            text-decoration: none;
+            
+            &:hover {
+                color: $accent-color;
+                padding-left: 5px;
+            }
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                background: rgba(white, 0.1);
+                border-radius: 50%;
+                color: white;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+                
+                &:hover {
+                    background: $accent-color;
+                    transform: translateY(-3px);
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 1.5rem 0;
+        border-top: 1px solid rgba(white, 0.1);
+        margin-top: 2rem;
+        
+        p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: rgba(white, 0.6);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "khmer-math-website",
+  "version": "1.0.0",
+  "description": "A Khmer Math Education Website",
+  "scripts": {
+    "build-css": "sass --style=compressed styles/main.scss main.css",
+    "watch-css": "sass --watch styles/main.scss:main.css --style=expanded",
+    "start": "npm run watch-css"
+  },
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

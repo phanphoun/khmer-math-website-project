@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ថ្នាក់ទី១០ - គណិតវិទ្យា</title>
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span>គណិតវិទ្យា</span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">ទំព័រដើម</a></li>
+                    <li><a href="#lessons" class="active">មេរៀន</a></li>
+                    <li><a href="#exercises">លំហាត់</a></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="dropdown-toggle">ថ្នាក់ទី១០ <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="grade10.html">មេរៀនទាំងអស់</a></li>
+                            <li><a href="#lessons">មេរៀនថ្មីៗ</a></li>
+                            <li><a href="#exercises">លំហាត់</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Navbar JavaScript -->
+    <script src="../js/navbar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+
+            menuToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                mainNav.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a nav link
+            document.querySelectorAll('.main-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mainNav.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        });
+    </script>
+
+    <main class="grade-page">
+        <div class="container">
+            <h1>ថ្នាក់ទី១០ - គណិតវិទ្យា</h1>
+            
+            <section id="lessons" class="lessons-section">
+                <h2>មេរៀនទាំងអស់</h2>
+                
+                <div class="chapter">
+                    <h3>ជំពូកទី២៖ ពិជគណិត</h3>
+                    <ul class="lesson-list">
+                        <li><a href="#">១.១ សមីការដឺក្រេទី១ និងទី២</a></li>
+                        <li><a href="#">១.២ ប្រព័ន្ធសមីការដឺក្រេទី១</a></li>
+                        <li><a href="#">១.៣ អសមីការ និងវិសមភាព</a></li>
+                    </ul>
+                </div>
+
+                <div class="chapter">
+                    <h3>ជំពូកទី៣៖ ពិជគណិត</h3>
+                    <ul class="lesson-list">
+                        <li><a href="#">២.១ វ៉ាទ្រីស និងវិសមភាព</a></li>
+                        <li><a href="#">២.២ ទ្រឹស្តីបទកូស៊ីនុស និងស៊ីនុស</a></li>
+                        <li><a href="#">២.៣ អនុគមន៍ត្រីកោណមាត្រ</a></li>
+                    </ul>
+                </div>
+
+                <div class="chapter">
+                    <h3>ជំពូកទី៣៖ កំណែវិធីលីនេអ៊ែរ</h3>
+                    <ul class="lesson-list">
+                        <li><a href="#">៣.១ ម៉ាទ្រីស និងប្រមាណវិធីលើម៉ាទ្រីស</a></li>
+                        <li><a href="#">៣.២ កត្តាកំណត់ និងម៉ាទ្រីសច្រាស់</a></li>
+                        <li><a href="#">៣.៣ ប្រព័ន្ធសមីការលីនេអ៊ែរ</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="exercises" class="exercises-section">
+                <h2>លំហាត់អនុវត្ត</h2>
+                <div class="exercise-grid">
+                    <div class="exercise-card">
+                        <h3>លំហាត់ពិជគណិត</h3>
+                        <p>អនុវត្តន៍សមីការ និងវិសមភាព</p>
+                        <a href="#" class="btn">ចាប់ផ្តើមធ្វើលំហាត់</a>
+                    </div>
+                    <div class="exercise-card">
+                        <h3>លំហាត់ធរណីមាត្រ</h3>
+                        <p>អនុវត្តន៍វ៉ិចទ័រ និងត្រីកោណមាត្រ</p>
+                        <a href="#" class="btn">ចាប់ផ្តើមធ្វើលំហាត់</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 គណិតវិទ្យា - ថ្នាក់ទី១០ | រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
+        </div>
+    </footer>
+</body>
+</html>
