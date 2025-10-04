@@ -157,6 +157,95 @@
         }
     }
     
+    .mission-vision-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 3rem 0;
+        
+        @include respond-to('md') {
+            grid-template-columns: 1fr;
+            gap: 1.2rem;
+        }
+    }
+    
+    .mission-vision-card {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1.8rem;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #4a6fa5, #166088);
+            transition: width 0.3s ease;
+        }
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            background: white;
+            
+            &::before {
+                width: 6px;
+            }
+            
+            .mission-vision-icon {
+                background: linear-gradient(135deg, #4a6fa5, #166088);
+                color: white;
+                transform: scale(1.1);
+            }
+        }
+        
+        .mission-vision-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(74, 111, 165, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4a6fa5;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 50px;
+                height: 3px;
+                background: linear-gradient(to right, #4a6fa5, #166088);
+                border-radius: 3px;
+            }
+        }
+        
+        p {
+            color: #555;
+            line-height: 1.7;
+            margin-top: 1rem;
+            font-size: 1.02rem;
+        }
+    }
+    
     .feature-item {
         display: flex;
         align-items: flex-start;
