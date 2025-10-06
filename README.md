@@ -1,122 +1,121 @@
-# គេហទំព័រគណិតវិទ្យាជាភាសាខ្មែរ (Khmer Math Education Website)
+# Khmer Math Education Website
 
-គេហទំព័រសិក្សាគណិតវិទ្យាសម្រាប់សិស្សខ្មែរ ពីថ្នាក់ទី៧ ដល់ថ្នាក់ទី១២។
+An educational website for math learners from Grade 7 to Grade 12.
 
-## ✨ លក្ខណៈពិសេស
+## ✨ Features
 
-- រចនាប័ទ្មឆ្លើយតបទៅនឹងអេក្រង់គ្រប់ប្រភេទ
-- មានទំព័រសម្រាប់ថ្នាក់រៀននីមួយៗ (ពីថ្នាក់ទី៧ ដល់ទី១២)
-- មេរៀន និងលំហាត់ដែលរៀបចំយ៉ាងសមរម្យ
-- ចំណុចប្រទាក់អ្នកប្រើប្រាស់សម័យទំនើប
-- គាំទ្រភាសាខ្មែរ
-- របាររុករកដែលអាចបត់បែនបានសម្រាប់ឧបករណ៍ចល័ត
-- ម៉ឺនុយធ្លាក់ចុះសម្រាប់ថ្នាក់រៀននីមួយៗ
-- វិជ្ជាជីវៈជំនួយការ (Chatbot) អុិនលាញ់ ដែលអណ្តែតនៅជ្រុងក្រោមស្តាំ
+- Fully responsive design
+- Dedicated pages for each grade (7–12)
+- Organized lessons and exercises
+- Modern, clean UI
+- Khmer language support (Kantumruy Pro font)
+- Mobile-friendly responsive navbar
+- Dropdown menu for grade navigation
+- Floating chatbot at the bottom-right corner
 
-## 🚀 បច្ចេកវិទ្យាដែលប្រើ
+## 🚀 Tech Stack
 
 - **Frontend**:
   - HTML5, CSS3, JavaScript
   - Sass/SCSS for styling
   - Font Awesome for icons
-  - Google Fonts (Kantumruy Pro) for Khmer typography
+  - Google Fonts (Kantumruy Pro)
 - **Development Tools**:
   - Node.js & npm
   - Sass compiler
   - Live reload for development
 
-## 🛠️ ការចាប់ផ្តើម
+## 🛠️ Getting Started
 
-### តម្រូវការមុនពេលដំឡើង
+### Prerequisites
 
-- Node.js (ជំនាន់ v14 ឬខ្ពស់ជាងនេះ)
-- npm (មកជាមួយ Node.js)
+- Node.js v14+ (or newer)
+- npm (bundled with Node.js)
 
-### ការដំឡើង
+### Installation
 
-1. ចម្លងឃ្លាំង៖
+1) Clone the repository:
    ```bash
    git clone https://github.com/phanphoun/khmer-math-website-project.git
    cd khmer-math-website-project
    ```
 
-2. ដំឡើងកញ្ចប់ដែលចាំបាច់៖
+2) Install dependencies:
    ```bash
    npm install
    ```
 
-3. ចម្លង SCSS ទៅ CSS៖
+3) Build SCSS to CSS:
    ```bash
    npm run build-css
    ```
 
-### ការអភិវឌ្ឍ
+### Development
 
-ដើម្បីចាប់ផ្តើមម៉ាស៊ីនបម្រើកំពុងអភិវឌ្ឍ ជាមួយនឹងការផ្ទុកឡើងវិញដោយស្វ័យប្រវត្តិ៖
+Start the dev workflow with auto-rebuild for SCSS:
 
 ```bash
 npm start
 ```
 
-នេះនឹងធ្វើឱ្យមានការតាមដានការផ្លាស់ប្តូរនៅក្នុងឯកសារ SCSS របស់អ្នក ហើយចម្លងវាឡើងវិញដោយស្វ័យប្រវត្តិ។
+This watches SCSS files and rebuilds CSS automatically.
 
-## 📁 រចនាសម្ព័ន្ធគម្រោង
+## 📁 Project Structure
 
 ```
-├── index.html          # ចំណុចចូលសំខាន់
-├── main.css            # CSS ដែលបានចម្លងហើយ
+├── index.html          # Main entry page
+├── main.css            # Compiled CSS
 ├── main.css.map        # Source map for CSS debugging
 ├── js/
-│   ├── navbar.js       # JavaScript for responsive navbar
-│   └── chatbot.js      # Floating chatbot interactions (toggle, messages, quick help)
-├── styles/             # ឯកសារ SCSS
-│   ├── main.scss       # Stylesheet សំខាន់
-│   ├── _variables.scss # អថេរ និងការកំណត់
-│   ├── _mixins.scss    # Mixins និង functions
-│   ├── _header.scss    # Styles for header section
-│   ├── _about-contact.scss # Styles for about and contact sections
-│   ├── _grade-pages.scss # Styles for grade pages
-│   └── components/     # Component styles
-│       └── _navbar.scss # Navbar component styles
-├── grade/              # ទំព័រសម្រាប់ថ្នាក់រៀននីមួយៗ
+│   ├── navbar.js       # Responsive navbar logic
+│   └── chatbot.js      # Floating chatbot (toggle, messages, quick help)
+├── styles/             # SCSS sources
+│   ├── main.scss
+│   ├── _variables.scss
+│   ├── _mixins.scss
+│   ├── _header.scss
+│   ├── _about-contact.scss
+│   ├── _grade-pages.scss
+│   └── components/
+│       └── _navbar.scss
+├── grade/              # Grade-specific pages
 │   ├── grade7.html
 │   ├── grade8.html
 │   ├── grade9.html
 │   ├── grade10.html
 │   ├── grade11.html
 │   └── grade12.html
-└── package.json        # ការកំណត់រចនាសម្ព័ន្ធគម្រោង
+└── package.json
 ```
 
-## 🏗️ ការសាងសង់សម្រាប់ផលិតផល
+## 🏗️ Production Build
 
-ដើម្បីបង្កើតការសាងសង់សម្រាប់ផលិតផលជាមួយ CSS ដែលបានបង្រួម៖
+Build CSS for production (minified via the configured script):
 
 ```bash
 npm run build-css
 ```
 
-## 💬 ជំនួយករសន្ទនា (Chatbot)
+## 💬 Chatbot
 
-- ទីតាំង: អណ្តែតនៅជ្រុងក្រោមស្តាំទំព័រ (ទាំងទំព័រដើម និងទំព័រថ្នាក់)
-- មុខងារ: បើក/បិទបង្អួចសន្ទនា បញ្ចូលសារ និងទទួលការឆ្លើយតបរហ័សតាមពាក្យគន្លឹះ
-- ដំណើរការ:
-  - ស្គាល់ពាក្យគន្លឹះភាសាខ្មែរ និងអង់គ្លេសសម្រាប់ថ្នាក់ (៧–១២) “ថ្នាក់ទី៩”, “grade 9”, ...
-  - ជួយចង្អុលបង្ហាញទៅផ្នែក "លំហាត់" និង "ទំនាក់ទំនង"
-- បច្ចេកទេស: មិនពឹងផ្អែកសេវាក្រៅខ្លួន បើកបរ client-side តែប៉ុណ្ណោះ
+- Placement: bottom-right on home and grade pages
+- Capabilities: open/close chat window, send messages, keyword-based quick replies
+- Behavior:
+  - Recognizes Khmer and English keywords for grades (7–12), e.g., “ថ្នាក់ទី៩”, “grade 9”
+  - Points users to “Exercises” and “Contact” sections
+- Implementation: fully client-side (no external services)
 
-ការកែតម្រូវ/ពង្រីក៖ អ្នកអាចភ្ជាប់ API ឬសេវា AI ពេលក្រោយ ដោយកែ `js/chatbot.js` ក្នុង handler ផ្ញើសារ។
+Extend later by wiring the submit handler in `js/chatbot.js` to an API or AI service.
 
-## 🤝 ការរួមចំណែក
+## 🤝 Contributing
 
-ការរួមចំណែកគឺជាការគួរឱ្យស្វាគមន៍! សូមធ្វើ pull request ឬបើក issue ថ្មី ប្រសិនបើអ្នកមានគំនិត ឬរកឃើញបញ្ហា។
+Contributions are welcome! Please open an issue or submit a pull request.
 
-## 📄 អាជ្ញាប័ណ្ណ
+## 📄 License
 
-គម្រោងនេះត្រូវបានអនុញ្ញាតឱ្យប្រើក្រោមអាជ្ញាប័ណ្ណ MIT - សូមមើលឯកសារ [LICENSE](LICENSE) សម្រាប់ព័ត៌មានលម្អិត។
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-## 📞 ទំនាក់ទំនង
+## 📞 Contact
 
-ប្រសិនបើអ្នកមានសំណួរ ឬយោបល់ សូមទាក់ទងមកយើង៖
-- អ៊ីមែល: [phanphoun855@gmail.com](mailto:phanphoun855@gmail.com)
+- Email: [phanphoun855@gmail.com](mailto:phanphoun855@gmail.com)
 - GitHub: [phanphoun](https://github.com/phanphoun)
