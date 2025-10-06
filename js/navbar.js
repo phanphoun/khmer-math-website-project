@@ -1,4 +1,8 @@
 // Navbar functionality
+// - Handles mobile menu toggle
+// - Handles dropdowns on mobile
+// - Compacts and hides/shows navbar on scroll
+// - Closes menu when navigating or clicking outside
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
     const menuToggle = document.querySelector('.menu-toggle');
@@ -37,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Header scroll effect
+    // Header scroll effect: compact on scroll and hide when scrolling down
     let lastScroll = 0;
     if (navbar) {
         window.addEventListener('scroll', () => {

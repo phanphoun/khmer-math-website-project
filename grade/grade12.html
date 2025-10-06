@@ -112,8 +112,34 @@
             <p>© 2025 គណិតវិទ្យា - ថ្នាក់ទី១២ | ឆ្នាំសិក្សា 2024-2025</p>
         </div>
     </footer>
+    
+    <!-- Floating Chatbot Widget -->
+    <div class="chatbot" aria-live="polite">
+        <div class="chatbot-window" role="dialog" aria-modal="false" aria-hidden="true">
+            <div class="chatbot-header">
+                <div class="chatbot-title"><i class="fas fa-robot"></i> ជំនួយការ</div>
+                <button class="chatbot-close" aria-label="Close chatbot" title="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">សួស្តី! ខ្ញុំអាចជួយអ្នកស្វែងរកមេរៀន ឬថ្នាក់ណាមួយ។</div>
+            </div>
+            <form class="chatbot-input" id="chatbotForm" autocomplete="off">
+                <input type="text" id="chatbotText" placeholder="សួរខ្ញុំអ្វីមួយ..." aria-label="Chat message">
+                <button type="submit" class="chatbot-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+        <button class="chatbot-toggle" aria-label="Open chat" aria-expanded="false" aria-controls="chatbotMessages">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
 
-     <!-- Navbar JavaScript -->
+    <!-- Navbar JavaScript -->
     <script src="../js/navbar.js"></script>
+    <!-- Chatbot JavaScript -->
+    <script src="../js/chatbot.js"></script>
 </body>
 </html>

@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="/Images/pi-mathematical-constant-symbol.png">
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icon font for UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Global Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
@@ -40,14 +43,8 @@
             </div>
         </div>
     </nav>
-    
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Navbar JavaScript -->
-    <script src="js/navbar.js"></script>
-
     <main>
+        <!-- Hero: welcome message and CTA -->
         <section id="home" class="hero">
             <div class="container">
                 <h2>សូមស្វាគមន៍មកកាន់គេហទំព័រគណិតវិទ្យារបស់យើង</h2>
@@ -56,6 +53,7 @@
             </div>
         </section>
 
+        <!-- Grades: quick links to each grade page -->
         <section id="grades" class="grades">
             <div class="container">
                 <h2>ជ្រើសរើសថ្នាក់រៀន</h2>
@@ -94,6 +92,7 @@
             </div>
         </section>
 
+        <!-- Exercises: sample practice entries -->
         <section id="exercises" class="exercises">
             <div class="container">
                 <h2>លំហាត់អនុវត្ត</h2>
@@ -107,11 +106,13 @@
                         <h3>លំហាត់ធរណីមាត្រ</h3>
                         <p>អនុវត្តន៍ការគណនាក្រលាផ្ទៃ និងកំពស់</p>
                         <a href="#" class="btn btn-outline">ចាប់ផ្តើមធ្វើលំហាត់</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- About -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
@@ -178,6 +179,7 @@
         </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>ទំនាក់ទំនងយើងខ្ញុំ</h2>
@@ -233,6 +235,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -267,3 +270,33 @@
             </div>
         </div>
     </footer>
+
+    <!-- Navbar JavaScript placed at end for performance -->
+    <script src="js/navbar.js"></script>
+    
+    <!-- Floating Chatbot Widget -->
+    <div class="chatbot" aria-live="polite">
+        <div class="chatbot-window" role="dialog" aria-modal="false" aria-hidden="true">
+            <div class="chatbot-header">
+                <div class="chatbot-title"><i class="fas fa-robot"></i> ជំនួយការ</div>
+                <button class="chatbot-close" aria-label="Close chatbot" title="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">សួស្តី! ខ្ញុំអាចជួយអ្នកស្វែងរកមេរៀន ឬថ្នាក់ណាមួយ។</div>
+            </div>
+            <form class="chatbot-input" id="chatbotForm" autocomplete="off">
+                <input type="text" id="chatbotText" placeholder="សួរខ្ញុំអ្វីមួយ..." aria-label="Chat message">
+                <button type="submit" class="chatbot-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+        <button class="chatbot-toggle" aria-label="Open chat" aria-expanded="false" aria-controls="chatbotMessages">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <!-- Chatbot JavaScript -->
+    <script src="js/chatbot.js"></script>
