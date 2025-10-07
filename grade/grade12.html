@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="km">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ថ្នាក់ទី12 - គណិតវិទ្យា</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ថ្នាក់ទី១២ - គណិតវិទ្យា</title>
+
+    <!-- SAME STYLE SHEET USED FOR ALL OTHER GRADES -->
     <link rel="stylesheet" href="/main.css">
+
     <link rel="icon" href="/Images/pi-mathematical-constant-symbol.png">
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Khmer font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome for dropdowns, icons, chatbot, etc. -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- =========================================================
+         1️⃣  NAVIGATION (identical to the other grades)
+         ========================================================= -->
     <nav class="navbar">
         <div class="container">
-            <a href="../index.html" class="logo">
-                <span>គណិតវិទ្យា</span>
-            </a>
-            
+            <a href="../index.html" class="logo"><span>គណិតវិទ្យា</span></a>
+
             <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
-            
+
             <div class="nav-menu">
                 <ul>
                     <li><a href="../index.html">ទំព័រដើម</a></li>
                     <li><a href="#lessons" class="active">មេរៀន</a></li>
                     <li><a href="#exercises">លំហាត់</a></li>
                     <li class="has-dropdown">
-                        <a href="#" class="dropdown-toggle">ថ្នាក់ទី12 <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-toggle">
+                            ថ្នាក់ទី១២ <i class="fas fa-chevron-down"></i>
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a href="grade12.html">មេរៀនទាំងអស់</a></li>
                             <li><a href="#lessons">មេរៀនថ្មីៗ</a></li>
                             <li><a href="#exercises">លំហាត់</a></li>
-                            <li><a href="#about">វិដេអូមេរៀន</a></li>
+                            <li><a href="#videos">វិដេអូមេរៀន</a></li>
                             <li><a href="#contact">ត្រៀមប្រលង</a></li>
                         </ul>
                     </li>
@@ -38,78 +54,244 @@
             </div>
         </div>
     </nav>
-    
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Navbar JavaScript -->
+
+    <!-- NAVBAR TOGGLE SCRIPT (same file you already have) -->
     <script src="../js/navbar.js"></script>
 
+    <!-- =========================================================
+         2️⃣  MAIN CONTENT
+         ========================================================= -->
     <main class="grade-page">
+
+        <!-- Page heading – only the class name changes -->
+        <div class="grade12">
+            <h1>មេរៀនគណិតវិទ្យា ថ្នាក់ទី១២</h1>
+        </div>
+
         <div class="container">
-            <h1>មេរៀនគណិតវិទ្យា ថ្នាក់ទី12</h1>
-            
+
+            <!-- -------------------------------------------------
+                 2.1 LESSONS SECTION – GRADE 12 CURRICULUM
+                 ------------------------------------------------- -->
             <section id="lessons" class="lessons-section">
                 <h2>មេរៀនទាំងអស់</h2>
-                
+
                 <div class="chapter">
-                    <h3>ជំពូកទី១៖ លេខគណិតវិទ្យា</h3>
+                    <h3>ជំពូកទី១៖ គណិតវិទ្យា​លើក​ទី​២ (Calculus II)</h3>
                     <ul class="lesson-list">
-                        <li><a href="#">១.១ លេខគត់ និងប្រមាណវិធីលើលេខគត់</a></li>
-                        <li><a href="#">១.២ ប្រភាគ និងទសភាគ</a></li>
-                        <li><a href="#">១.៣ ភាគរយ និងសមាមាត្រ</a></li>
+                        <li><a href="#">១.១ Integration Techniques – Integration by Parts, Trigonometric Substitution, Partial Fractions</a></li>
+                        <li><a href="#">១.២ Improper Integrals & Convergence Tests</a></li>
+                        <li><a href="#">១.៣ Applications of Integration – Volumes, Arc Length, Surface Area</a></li>
+                        <li><a href="#">១.៤ Differential Equations – First‑order linear, separable, exact equations</a></li>
+                        <li><a href="#">១.៥ Series & Sequences – Power Series, Taylor & Maclaurin Series, Convergence</a></li>
                     </ul>
                 </div>
 
                 <div class="chapter">
-                    <h3>ជំពូកទី២៖ ពិជគណិត</h3>
+                    <h3>ជំពូកទី២៖ អាល់ហ្ស៊ីម (Linear Algebra)</h3>
                     <ul class="lesson-list">
-                        <li><a href="#">២.១ កន្សោមពិជគណិត</a></li>
-                        <li><a href="#">២.២ សមីការដឺក្រេទី១មួយអញ្ញាត្តិ</a></li>
-                        <li><a href="#">២.៣ វិសមីការដឺក្រេទី១មួយអញ្ញាត្តិ</a></li>
+                        <li><a href="#">២.១ Matrices – Operations, Inverses, Determinants</a></li>
+                        <li><a href="#">២.២ Systems of Linear Equations – Gaussian Elimination, Cramer’s Rule</a></li>
+                        <li><a href="#">២.៣ Vector Spaces – Basis, Dimension, Rank‑Nullity</a></li>
+                        <li><a href="#">២.៤ Eigenvalues & Eigenvectors – Diagonalisation, Applications</a></li>
+                        <li><a href="#">២.៥ Linear Transformations – Matrices representation, Change of basis</a></li>
                     </ul>
                 </div>
 
                 <div class="chapter">
-                    <h3>ជំពូកទី៣៖ ធរណីមាត្រ</h3>
+                    <h3>ជំពូកទី៣៖ ត្រីកោណមាត្រ​កម្រិត​ខ្ពស់ (Advanced Trigonometry & Analytic Geometry)</h3>
                     <ul class="lesson-list">
-                        <li><a href="#">៣.១ មុំ និងរាងធរណីមាត្រមូលដ្ឋាន</a></li>
-                        <li><a href="#">៣.២ ត្រីកោណ និងរាងចតុកោណ</a></li>
-                        <li><a href="#">៣.៣ ក្រលាផ្ទៃ និងមាឌ</a></li>
+                        <li><a href="#">៣.១ Polar Coordinates & Graphs</a></li>
+                        <li><a href="#">៣.២ Conic Sections – Parabola, Ellipse, Hyperbola (focus‑directrix form)</a></li>
+                        <li><a href="#">៣.៣ Vectors in the Plane – Dot product, cross product (2‑D), projection</a></li>
+                        <li><a href="#">៣.៤ Rotation & Reflection Matrices</a></li>
+                        <li><a href="#">៣.៥ 3‑D Geometry – Equations of planes, lines, distance formulas</a></li>
+                    </ul>
+                </div>
+
+                <div class="chapter">
+                    <h3>ជំពូកទី៤៖ ស្ថិតិ និង​ប្រមាណវិធី​ខ្ពស់ (Advanced Statistics & Probability)</h3>
+                    <ul class="lesson-list">
+                        <li><a href="#">៤.១ Random Variables – Discrete & Continuous distributions</a></li>
+                        <li><a href="#">៤.២ Expected Value, Variance, Standard Deviation, Moments</a></li>
+                        <li><a href="#">៤.៣ Common Distributions – Normal, Binomial, Poisson, Exponential</a></li>
+                        <li><a href="#">៤.৪ Hypothesis Testing – t‑test, chi‑square, ANOVA basics</a></li>
+                        <li><a href="#">៤.⑤ Regression & Correlation – Linear regression, coefficient of determination</a></li>
+                    </ul>
+                </div>
+
+                <div class="chapter">
+                    <h3>ជំពូកទី៥៖ បញ្ហា​ឧបករណ៍​ (Applied Problem Solving)</h3>
+                    <ul class="lesson-list">
+                        <li><a href="#">៥.១ Modelling with Differential Equations (Population, Motion, RC circuits)</a></li>
+                        <li><a href="#">៥.២ Optimisation – Lagrange multipliers (introductory)</a></li>
+                        <li><a href="#">៥.៣ Financial Mathematics – Interest, annuities, amortisation</a></li>
+                        <li><a href="#">៥.៤ Mathematical Induction & Proof Techniques</a></li>
+                        <li><a href="#">៥.៥ Project‑Based Assignment – Combine several topics in one real‑world case study</a></li>
                     </ul>
                 </div>
             </section>
 
+            <!-- -------------------------------------------------
+                 2.2 EXERCISES SECTION – SAME GRID LAYOUT
+                 ------------------------------------------------- -->
             <section id="exercises" class="exercises-section">
                 <h2>លំហាត់អនុវត្ត</h2>
                 <div class="exercise-grid">
+
                     <div class="exercise-card">
-                        <h3>លំហាត់ពិជគណិត</h3>
-                        <p>អនុវត្តន៍ការដោះស្រាយសមីការ</p>
-                        <a href="#" class="btn">ចាប់ផ្តើមធ្វើលំហាត់</a>
+                        <h3>លំហាត់ Calculus II</h3>
+                        <p>Integration techniques, improper integrals, series expansions</p>
+                        <a href="#" class="btn">ចាប់ផ្តើម​ធ្វើ​លំហាត់</a>
                     </div>
+
                     <div class="exercise-card">
-                        <h3>លំហាត់ធរណីមាត្រ</h3>
-                        <p>អនុវត្តន៍គណនាក្រលាផ្ទៃ</p>
-                        <a href="#" class="btn">ចាប់ផ្តើមធ្វើលំហាត់</a>
+                        <h3>លំហាត់ Linear Algebra</h3>
+                        <p>Matrix operations, eigenvalues, systems of equations</p>
+                        <a href="#" class="btn">ចាប់ផ្តើម​ធ្វើ​លំហាត់</a>
                     </div>
+
                     <div class="exercise-card">
-                        <h3>លំហាត់ត្រៀមប្រលង</h3>
-                        <p>វិញ្ញាសារ​​​ ឆ្នាំ​២០០០ ដល់​​ ២០២៥</p>
-                        <a href="#" class="btn">ចាប់ផ្តើមធ្វើលំហាត់</a>
+                        <h3>លំហាត់ Advanced Trigonometry & Analytic Geometry</h3>
+                        <p>Polar coordinates, conic sections, 3‑D vectors</p>
+                        <a href="#" class="btn">ចាប់ផ្តើម​ធ្វើ​លំហាត់</a>
+                    </div>
+
+                    <div class="exercise-card">
+                        <h3>លំហាត់ Advanced Statistics & Probability</h3>
+                        <p>Distributions, hypothesis testing, regression analysis</p>
+                        <a href="#" class="btn">ចាប់ផ្តើម​ធ្វើ​លំហាត់</a>
+                    </div>
+
+                    <div class="exercise-card">
+                        <h3>លំហាត់ ត្រៀមប្រលង</h3>
+                        <p>ប្រលងឆ្នាំ 2000‑2025 – សំណួរ​ទាំងអស់ (All‑type practice)</p>
+                        <a href="#" class="btn">ចាប់ផ្តើម​ធ្វើ​លំហាត់</a>
                     </div>
                 </div>
             </section>
+
+            <!-- -------------------------------------------------
+                 2.3 VIDEO SECTION – 5 SAMPLE VIDEOS (replace IDs)
+                 ------------------------------------------------- -->
+            <section id="videos" class="videos-section">
+                <h2 class="videos-title">វិដេអូមេរៀន</h2>
+
+                <div class="video-grid">
+
+                    <!-- ---- Video 1 ---- -->
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1"
+                                title="Calculus II – Integration Techniques"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                        <h3>Calculus II – Integration Techniques (Lesson 1‑1)</h3>
+
+                        <div class="video-card-info">
+                            <p>👀 342 Views</p>
+                            <a href="#" title="5 Stars">⭐⭐⭐⭐⭐</a>
+                            <a href="#" title="Like">👍 Like</a>
+                        </div>
+
+                        <a href="#" class="btn">▶️ ចាប់ផ្តើម​មើល​វីដេអូ</a>
+                    </div>
+
+                    <!-- ---- Video 2 ---- -->
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2"
+                                title="Linear Algebra – Matrices & Determinants"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                        <h3>Linear Algebra – Matrices & Determinants (Lesson 2‑1)</h3>
+
+                        <div class="video-card-info">
+                            <p>👀 219 Views</p>
+                            <a href="#" title="5 Stars">⭐⭐⭐⭐⭐</a>
+                            <a href="#" title="Like">👍 Like</a>
+                        </div>
+
+                        <a href="#" class="btn">▶️ ចាប់ផ្តើម​មើល​វីដេអូ</a>
+                    </div>
+
+                    <!-- ---- Video 3 ---- -->
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3"
+                                title="Advanced Trigonometry – Polar Coordinates & Conics"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                        <h3>Advanced Trigonometry – Polar Coordinates & Conics (Lesson 3‑1)</h3>
+
+                        <div class="video-card-info">
+                            <p>👀 187 Views</p>
+                            <a href="#" title="4 Stars">⭐⭐⭐⭐</a>
+                            <a href="#" title="Like">👍 Like</a>
+                        </div>
+
+                        <a href="#" class="btn">▶️ ចាប់ផ្តើម​មើល​វីដេអូ</a>
+                    </div>
+
+                    <!-- ---- Video 4 ---- -->
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_4"
+                                title="Advanced Statistics – Normal Distribution & Hypothesis Testing"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                        <h3>Advanced Statistics – Normal Distribution & Hypothesis Testing (Lesson 4‑1)</h3>
+
+                        <div class="video-card-info">
+                            <p>👀 256 Views</p>
+                            <a href="#" title="5 Stars">⭐⭐⭐⭐⭐</a>
+                            <a href="#" title="Like">👍 Like</a>
+                        </div>
+
+                        <a href="#" class="btn">▶️ ចាប់ផ្តើម​មើល​វីដេអូ</a>
+                    </div>
+
+                    <!-- ---- Video 5 ---- -->
+                    <div class="video-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_5"
+                                title="Applied Modelling – Differential Equation Examples"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                        <h3>Applied Modelling – Differential Equation Examples (Lesson 5‑1)</h3>
+
+                        <div class="video-card-info">
+                            <p>👀 164 Views</p>
+                            <a href="#" title="5 Stars">⭐⭐⭐⭐⭐</a>
+                            <a href="#" title="Like">👍 Like</a>
+                        </div>
+
+                        <a href="#" class="btn">▶️ ចាប់ផ្តើម​មើល​វីដេអូ</a>
+                    </div>
+
+                    <!-- OPTIONAL “MORE” BUTTON – same as earlier grades (uncomment if needed) -->
+                    <!--
+                    <div class="video-card-plus" id="video-card-plus-plus">
+                        <i class="fas fa-arrow-right"></i>
+                        <p id="video-card-plus-text">វិដេអាច្រើនទៀត</p>
+                    </div>
+                    -->
+                </div>
+            </section>
+
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 គណិតវិទ្យា - ថ្នាក់ទី៧ | រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
-        </div>
+    <!-- =========================================================
+         3️⃣  FOOTER (grade‑12 specific class)
+         ========================================================= -->
+    <footer class="footer-grade12">
+        <p>© 2025 គណិតវិទ្យា - ថ្នាក់ទី១២ | រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
     </footer>
-    
-    <!-- Floating Chatbot Widget -->
+
+    <!-- =========================================================
+         4️⃣  CHATBOT (same component as the other pages)
+         ========================================================= -->
     <div class="chatbot" aria-live="polite">
         <div class="chatbot-window" role="dialog" aria-modal="false" aria-hidden="true">
             <div class="chatbot-header">
@@ -118,22 +300,44 @@
                     <i class="fas fa-times"></i>
                 </button>
             </div>
+
             <div class="chatbot-messages" id="chatbotMessages">
                 <div class="chatbot-message bot">សួស្តី! ខ្ញុំអាចជួយអ្នកស្វែងរកមេរៀន ឬថ្នាក់ណាមួយ។</div>
             </div>
+
             <form class="chatbot-input" id="chatbotForm" autocomplete="off">
-                <input type="text" id="chatbotText" placeholder="សួរខ្ញុំអ្វីមួយ..." aria-label="Chat message">
+                <input type="text" id="chatbotText" placeholder="សួរខ្ញុំអ្វីមួយ..."
+                       aria-label="Chat message">
                 <button type="submit" class="chatbot-send" aria-label="Send message">
                     <i class="fas fa-paper-plane"></i>
                 </button>
             </form>
         </div>
-        <button class="chatbot-toggle" aria-label="Open chat" aria-expanded="false" aria-controls="chatbotMessages">
+
+        <button class="chatbot-toggle" aria-label="Open chat" aria-expanded="false"
+                aria-controls="chatbotMessages">
             <i class="fas fa-comments"></i>
         </button>
     </div>
 
-    <!-- Chatbot JavaScript -->
+    <!-- =========================================================
+         5️⃣  JAVASCRIPT (same files you already use)
+         ========================================================= -->
     <script src="../js/chatbot.js"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- OPTIONAL: “More videos” toggle (same script you used for other grades) -->
+    <script>
+        const moreBtn = document.getElementById('video-card-plus-plus');
+        if (moreBtn) {
+            moreBtn.addEventListener('click', () => {
+                moreBtn.classList.toggle('open'); // rotates the arrow
+                // Toggle hidden extra videos here if you ever add them
+                // document.querySelectorAll('.extra-video')
+                //         .forEach(v => v.classList.toggle('hidden'));
+            });
+        }
+    </script>
 </body>
+
 </html>
