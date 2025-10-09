@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>លំហាត់គណិតវិទ្យា - ថ្នាក់ទី៧</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/math-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-square-root-alt"></i>
+                <span>គណិតវិទ្យា</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">ទំព័រដើម</a></li>
+                    <li><a href="lessons.html">មេរៀន</a></li>
+                    <li><a href="exercises.html" class="active">លំហាត់</a></li>
+                    <li><a href="about.html">អំពីយើង</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Exercises Section -->
+    <section class="exercises-section section-padding">
+        <div class="container">
+            <h1 class="section-title" data-aos="fade-up">លំហាត់គណិតវិទ្យា</h1>
+            
+            <!-- Search and Filter -->
+            <div class="exercises-filter" data-aos="fade-up" data-aos-delay="100">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchExercises" placeholder="ស្វែងរកលំហាត់...">
+                </div>
+                <div class="filter-options">
+                    <select id="gradeFilter" class="filter-select">
+                        <option value="">ជ្រើសរើសថ្នាក់</option>
+                        <option value="grade7">ថ្នាក់ទី៧</option>
+                        <option value="grade8">ថ្នាក់ទី៨</option>
+                        <option value="grade9">ថ្នាក់ទី៩</option>
+                    </select>
+                    <select id="difficultyFilter" class="filter-select">
+                        <option value="">កម្រិតលំបាក</option>
+                        <option value="easy">ងាយ</option>
+                        <option value="medium">មធ្យម</option>
+                        <option value="hard">ពិបាក</option>
+                    </select>
+                    <select id="topicFilter" class="filter-select">
+                        <option value="">ប្រធានបទ</option>
+                        <option value="algebra">ពីជគណិត</option>
+                        <option value="geometry">ធរណីមាត្រ</option>
+                        <option value="arithmetic">លេខគណិត</option>
+                        <option value="trigonometry">ត្រីកោណមាត្រ</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Exercise Categories -->
+            <div class="exercise-categories" data-aos="fade-up" data-aos-delay="150">
+                <button class="category-btn active" data-category="all">ទាំងអស់</button>
+                <button class="category-btn" data-category="new">ថ្មីៗ</button>
+                <button class="category-btn" data-category="popular">ពេញនិយម</button>
+                <button class="category-btn" data-category="exam">លំហាត់ប្រឡង</button>
+            </div>
+
+            <!-- Exercises Grid -->
+            <div class="exercises-grid" id="exercisesContainer">
+                <!-- Exercise Card 1 -->
+                <div class="exercise-card" data-category="grade7" data-difficulty="easy" data-topic="arithmetic" data-aos="fade-up">
+                    <div class="exercise-header">
+                        <span class="badge grade-7">ថ្នាក់ទី៧</span>
+                        <span class="badge difficulty-easy">ងាយ</span>
+                        <span class="badge topic-arithmetic">លេខគណិត</span>
+                    </div>
+                    <h3>ប្រមាណវិធីលើចំនួនគត់</h3>
+                    <div class="exercise-content">
+                        <p>គណនាតម្លៃនៃកន្សោមខាងក្រោម៖</p>
+                        <p class="math-expression">15 + (-8) × 3 - 5 = ?</p>
+                    </div>
+                    <div class="exercise-footer">
+                        <span class="attempts"><i class="fas fa-users"></i> 1.2K ដង</span>
+                        <button class="btn-solve">ដោះស្រាយឥឡូវ</button>
+                    </div>
+                </div>
+
+                <!-- Exercise Card 2 -->
+                <div class="exercise-card" data-category="grade7" data-difficulty="medium" data-topic="algebra" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exercise-header">
+                        <span class="badge grade-7">ថ្នាក់ទី៧</span>
+                        <span class="badge difficulty-medium">មធ្យម</span>
+                        <span class="badge topic-algebra">ពីជគណិត</span>
+                    </div>
+                    <h3>ដោះស្រាយសមីការ</h3>
+                    <div class="exercise-content">
+                        <p>រកតម្លៃ x ក្នុងសមីការខាងក្រោម៖</p>
+                        <p class="math-expression">2(x + 3) = 16</p>
+                    </div>
+                    <div class="exercise-footer">
+                        <span class="attempts"><i class="fas fa-users"></i> 980 ដង</span>
+                        <button class="btn-solve">ដោះស្រាយឥឡូវ</button>
+                    </div>
+                </div>
+
+                <!-- Exercise Card 3 -->
+                <div class="exercise-card" data-category="grade8" data-difficulty="medium" data-topic="geometry" data-aos="fade-up" data-aos-delay="200">
+                    <div class="exercise-header">
+                        <span class="badge grade-8">ថ្នាក់ទី៨</span>
+                        <span class="badge difficulty-medium">មធ្យម</span>
+                        <span class="badge topic-geometry">ធរណីមាត្រ</span>
+                    </div>
+                    <h3>គណនាក្រលាផ្ទៃចតុកោណកែង</h3>
+                    <div class="exercise-content">
+                        <p>គណនាក្រលាផ្ទៃចតុកោណកែងដែលមានប្រវែងជ្រុង 12 សម និងទទឹង 8 សម។</p>
+                    </div>
+                    <div class="exercise-footer">
+                        <span class="attempts"><i class="fas fa-users"></i> 1.5K ដង</span>
+                        <button class="btn-solve">ដោះស្រាយឥឡូវ</button>
+                    </div>
+                </div>
+
+                <!-- Exercise Card 4 -->
+                <div class="exercise-card" data-category="grade9" data-difficulty="hard" data-topic="trigonometry" data-aos="fade-up" data-aos-delay="300">
+                    <div class="exercise-header">
+                        <span class="badge grade-9">ថ្នាក់ទី៩</span>
+                        <span class="badge difficulty-hard">ពិបាក</span>
+                        <span class="badge topic-trigonometry">ត្រីកោណមាត្រ</span>
+                    </div>
+                    <h3>ប្រើស៊ីនុស និងកូស៊ីនុស</h3>
+                    <div class="exercise-content">
+                        <p>ក្នុងត្រីកោណ ABC ដែលមានមុំ A = 30° និងជ្រុង b = 10 សម គណនាជ្រុង a បើដឹងថា sin(30°) = 0.5</p>
+                    </div>
+                    <div class="exercise-footer">
+                        <span class="attempts"><i class="fas fa-users"></i> 750 ដង</span>
+                        <button class="btn-solve">ដោះស្រាយឥឡូវ</button>
+                    </div>
+                </div>
+
+                <!-- Exercise Card 5 -->
+                <div class="exercise-card" data-category="grade7" data-difficulty="easy" data-topic="fractions" data-aos="fade-up" data-aos-delay="400">
+                    <div class="exercise-header">
+                        <span class="badge grade-7">ថ្នាក់ទី៧</span>
+                        <span class="badge difficulty-easy">ងាយ</span>
+                        <span class="badge topic-arithmetic">ប្រភាគ</span>
+                    </div>
+                    <h3>បូកប្រភាគ</h3>
+                    <div class="exercise-content">
+                        <p>គណនា៖</p>
+                        <p class="math-expression">1/4 + 1/2 = ?</p>
+                    </div>
+                    <div class="exercise-footer">
+                        <span class="attempts"><i class="fas fa-users"></i> 2.1K ដង</span>
+                        <button class="btn-solve">ដោះស្រាយឥឡូវ</button>
+                    </div>
+                </div>
+
+                <!-- Exercise Card 6 -->
+                <div class="exercise-card" data-category="grade8" data-difficulty="hard" data-topic="algebra" data-aos="fade-up" data-aos-delay="500">
+                    <div class="exercise-header">
+                        <span class="badge grade-8">ថ្នាក់ទី៨</span>
+                        <span class="badge difficulty-hard">ពិបាក</span>
+                        <span class="badge topic-algebra">ពីជគណិត</span>
+                    </div>
+                    <h3>ប្រព័ន្ធសមីការ</h3>
+                    <div class="exercise-content">
+                        <p>ដោះស្រាយប្រព័ន្ធសមីការ៖</p>
+                        <p class="math-expression">2x + 3y = 12<br>4x - y = 5</p>
+                    </div>
+                    <div class="exercise-footer">
+                        <span class="attempts"><i class="fas fa-users"></i> 890 ដង</span>
+                        <button class="btn-solve">ដោះស្រាយឥឡូវ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" data-aos="fade-up">
+                <a href="#" class="page-nav disabled"><i class="fas fa-chevron-left"></i> ថយក្រោយ</a>
+                <div class="page-numbers">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#">5</a>
+                </div>
+                <a href="#" class="page-nav">បន្ទាប់ <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>អំពីយើង</h3>
+                    <p>គេហទំព័រគណិតវិទ្យាសម្រាប់សិស្សថ្នាក់ទី៧</p>
+                </div>
+                <div class="footer-links">
+                    <h3>តំណភ្ជាប់</h3>
+                    <ul>
+                        <li><a href="index.html">ទំព័រដើម</a></li>
+                        <li><a href="lessons.html">មេរៀន</a></li>
+                        <li><a href="exercises.html">លំហាត់</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>ទំនាក់ទំនង</h3>
+                    <p><i class="fas fa-envelope"></i> info@khmer-math.edu.kh</p>
+                    <p><i class="fas fa-phone"></i> +855 12 345 678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 គណិតវិទ្យា. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/exercises.js"></script>
+</body>
+</html>

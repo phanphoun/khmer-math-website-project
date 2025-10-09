@@ -3,234 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>គណិតវិទ្យា - គេហទំព័រគណិតវិទ្យាជាភាសាខ្មែរ</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="/Images/pi-mathematical-constant-symbol.png">
+    <title>គណិតវិទ្យា - ថ្នាក់ទី៧</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/math-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Icon font for UI icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Global Navigation Bar -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
+                <i class="fas fa-square-root-alt"></i>
                 <span>គណិតវិទ្យា</span>
             </a>
-            
             <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
-            
             <div class="nav-menu">
                 <ul>
                     <li><a href="index.html" class="active">ទំព័រដើម</a></li>
-                    <li><a href="#about">អំពីយើង</a></li>
-                    <li><a href="#exercises">លំហាត់</a></li>
-                    <li class="has-dropdown">
-                        <a href="#" class="dropdown-toggle">ថ្នាក់រៀន <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="grade/grade7.html">ថ្នាក់ទី៧</a></li>
-                            <li><a href="grade/grade8.html">ថ្នាក់ទី៨</a></li>
-                            <li><a href="grade/grade9.html">ថ្នាក់ទី៩</a></li>
-                            <li><a href="grade/grade10.html">ថ្នាក់ទី១០</a></li>
-                            <li><a href="grade/grade11.html">ថ្នាក់ទី១១</a></li>
-                            <li><a href="grade/grade12.html">ថ្នាក់ទី១២</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">ទំនាក់ទំនង</a></li>
+                    <li><a href="lessons.html">មេរៀន</a></li>
+                    <li><a href="exercises.html">លំហាត់</a></li>
+                    <li><a href="about.html">អំពីយើង</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main>
-        <!-- Hero: welcome message and CTA -->
-        <section id="home" class="hero">
-            <div class="container">
-                <h2>សូមស្វាគមន៍មកកាន់គេហទំព័រគណិតវិទ្យារបស់យើង</h2>
-                <p>រៀនគណិតវិទ្យាដោយងាយស្រួល និងយល់ដឹងបានល្អបំផុត</p>
-                <a href="#lessons" class="btn">ចាប់ផ្តើមរៀន</a>
-            </div>
-        </section>
 
-        <!-- Grades: quick links to each grade page -->
-        <section id="grades" class="grades">
-            <div class="container">
-                <h2>ជ្រើសរើសថ្នាក់រៀន</h2>
-                <div class="grade-grid">
-                    <a href="grade/grade7.html" class="grade-card">
-                        <div class="grade-number">៧</div>
-                        <h3>ថ្នាក់ទី៧</h3>
-                        <p>ពិជគណិតមូលដ្ឋាន និងធរណីមាត្របឋម</p>
-                    </a>
-                    <a href="grade/grade8.html" class="grade-card">
-                        <div class="grade-number">៨</div>
-                        <h3>ថ្នាក់ទី៨</h3>
-                        <p>ពិជគណិត និងធរណីមាត្រកម្រិតមធ្យម</p>
-                    </a>
-                    <a href="grade/grade9.html" class="grade-card">
-                        <div class="grade-number">៩</div>
-                        <h3>ថ្នាក់ទី៩</h3>
-                        <p>អនុគមន៍ និងត្រីកោណមាត្រ</p>
-                    </a>
-                    <a href="grade/grade10.html" class="grade-card">
-                        <div class="grade-number">១០</div>
-                        <h3>ថ្នាក់ទី១០</h3>
-                        <p>អនុគមន៍កម្រិតខ្ពស់ និងវ៉ិចទ័រ</p>
-                    </a>
-                    <a href="grade/grade11.html" class="grade-card">
-                        <div class="grade-number">១១</div>
-                        <h3>ថ្នាក់ទី១១</h3>
-                        <p>ស្ថិតិ ប្រូបាប និងពិជគណិតលីនេអ៊ែរ</p>
-                    </a>
-                    <a href="grade/grade12.html" class="grade-card">
-                        <div class="grade-number">១២</div>
-                        <h3>ថ្នាក់ទី១២</h3>
-                        <p>កាល់ខុល និងសមីការឌីផេរ៉ង់ស្យែល</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Exercises: sample practice entries -->
-        <section id="exercises" class="exercises">
-            <div class="container">
-                <h2>លំហាត់អនុវត្ត</h2>
-                <div class="exercise-list">
-                    <div class="exercise">
-                        <h3>លំហាត់ពិជគណិត</h3>
-                        <p>អនុវត្តន៍ការដោះស្រាយសមីការដោយខ្លួនឯង</p>
-                        <a href="#" class="btn btn-outline">ចាប់ផ្តើមធ្វើលំហាត់</a>
-                    </div>
-                    <div class="exercise">
-                        <h3>លំហាត់ធរណីមាត្រ</h3>
-                        <p>អនុវត្តន៍ការគណនាក្រលាផ្ទៃ និងកំពស់</p>
-                        <a href="#" class="btn btn-outline">ចាប់ផ្តើមធ្វើលំហាត់</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- About -->
-    <section id="about" class="about-section">
+    <!-- Hero Section -->
+    <header class="hero">
         <div class="container">
-            <div class="section-header">
-                <h2>អំពីយើង</h2>
-                <div class="divider"></div>
-                <p class="section-subtitle">ស្វែងយល់បន្ថែមអំពីយើងខ្ញុំ និងបេសកកម្មរបស់យើង</p>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <img src="https://img.freepik.com/free-vector/teamwork-concept-illustration_114360-1571.jpg" alt="Teamwork in Education" class="img-fluid">
-                        <div class="experience-badge">
-                            <span class="years">5+</span>
-                            <span>ឆ្នាំនៃបទពិសោធន៍</span>
-                        </div>
-                    </div>
+            <div class="hero-content">
+                <h1 data-aos="fade-up">សូមស្វាគមន៍មកកាន់គេហទំព័រគណិតវិទ្យា</h1>
+                <p data-aos="fade-up" data-aos-delay="100">រៀនគណិតវិទ្យាយ៉ាងសប្បាយរីករាយ និងមានប្រសិទ្ធភាព</p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+                    <a href="lessons.html" class="btn btn-primary">ចាប់ផ្តើមរៀន</a>
+                    <a href="#features" class="btn btn-outline">ស្វែងយល់បន្ថែម</a>
                 </div>
-                <div class="about-text">
-                    <h3>គេហទំព័រគណិតវិទ្យាជាភាសាខ្មែរ</h3>
-                    <p>យើងជាក្រុមអ្នកអប់រំដែលមានចិត្តចង់ចែករំលែកចំណេះដឹងអំពីគណិតវិទ្យាទៅកាន់សិស្សនិស្សិតខ្មែរទូទៅ។ យើងជឿជាក់ថាការអប់រំគណិតវិទ្យាអាចជួយអភិវឌ្ឍន៍គំនិតវិភាគ និងជំនាញក្នុងការដោះស្រាយបញ្ហា។</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>គ្រូបង្រៀនជំនាញខ្ពស់</h4>
-                                <p>គ្រូអ្នកជំនាញដែលមានបទពិសោធន៍ក្នុងការបង្រៀន</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>វគ្គសិក្សាទំនើប</h4>
-                                <p>សម្ភារៈសិក្សាដែលទាក់ទាញ និងងាយយល់</p>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="https://luxai.com/wp-content/uploads/website-refactor/qt-robots/QT_big_hero.png" alt="Math Illustration">
+            </div>
+        </div>
+    </header>
 
-                    <div class="mission-vision-grid">
-                        <div class="mission-vision-card">
-                            <div class="mission-vision-icon">
-                                <i class="fas fa-bullseye"></i>
-                            </div>
-                            <h3>បេសកកម្មយើង</h3>
-                            <p>យើងចង់បង្កើតបរិយាកាសរៀនសូត្រដែលងាយស្រួល និងមានប្រសិទ្ធភាពសម្រាប់សិស្សានុសិស្សខ្មែរ ដើម្បីអភិវឌ្ឍជំនាញគណិតវិទ្យានិងគំនិតវិភាគ។</p>
-                        </div>
-                        
-                        <div class="mission-vision-card">
-                            <div class="mission-vision-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <h3>វិស័យយើង</h3>
-                            <p>ផ្តល់ចំណេះដឹងគណិតវិទ្យាដោយឥតគិតថ្លៃ និងងាយស្រួលចូលដំណើរការសម្រាប់សិស្សានុសិស្សគ្រប់រូប ដោយប្រើបច្ចេកវិទ្យាទំនើបៗ។</p>
-                        </div>
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>ហេតុអ្វីគួរជ្រើសរើសយើង?</h2>
+                <p>យើងផ្តល់នូវវិធីសិក្សាដ៏ប្រសើរបំផុតសម្រាប់កូនអ្នក</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
                     </div>
-                    
-                    <a href="#contact" class="btn btn-primary">ទាក់ទងយើងខ្ញុំ</a>
+                    <h3>គ្រូជំនាញ</h3>
+                    <p>គ្រូដែលមានបទពិសោធន៍ និងចេះផ្តល់ការណែនាំដល់សិស្សគ្រប់រូប</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>វគ្គសិក្សាតាមអ៊ីនធឺណិត</h3>
+                    <p>រៀននៅពេលណាក៏បាន និងនៅកន្លែងណាក៏បានតាមរយៈប្រព័ន្ធអេឡិចត្រូនិករបស់យើង</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>សម្ភារៈសិក្សាពេញលេញ</h3>
+                    <p>មេរៀនដែលមានគុណភាពខ្ពស់ លំហាត់ជាច្រើន និងដំណោះស្រាយលំអិត</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact-section">
+    <!-- Popular Lessons -->
+    <section class="section bg-light">
         <div class="container">
-            <h2>ទំនាក់ទំនងយើងខ្ញុំ</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>អាសយដ្ឋាន</h4>
-                            <p>ផ្ទះលេខ 371, មហាវិថីបូរីសូឡា, រាជធានីភ្នំពេញ</p>
-                        </div>
+            <div class="section-header" data-aos="fade-up">
+                <h2>មេរៀនពេញនិយម</h2>
+                <p>ស្វែងយល់អំពីមេរៀនដែលមានប្រជាប្រិយភាពខ្ពស់បំផុតរបស់យើង</p>
+            </div>
+            <div class="lessons-grid">
+                <div class="lesson-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="lesson-image">
+                        <img src="https://files.idyllic.app/files/static/3785944" alt="ចំនួនកុំផ្លិច">
+                        <div class="lesson-category">ថ្នាក់ទី៧</div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>ទូរស័ព្ទ</h4>
-                            <p>+855 12 345 678</p>
-                        </div>
+                    <div class="lesson-content">
+                        <h3>ចំនួនកុំផ្លិច</h3>
+                        <p>សិក្សាអំពីចំនួនកុំផ្លិច និងប្រតិបត្តិការលើវា</p>
+                        <a href="lessons.html#complex-numbers" class="btn btn-sm btn-outline">អានបន្ថែម</a>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>អ៊ីមែល</h4>
-                            <p>info@khmer-math.edu.kh</p>
-                        </div>
+                </div>
+                <div class="lesson-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="lesson-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT47IXy3nF6BOn2QeyOkWlj2AcR8_zzQckg8A&s" alt="សមីការ">
+                        <div class="lesson-category">ថ្នាក់ទី៧</div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>ម៉ោងធ្វើការ</h4>
-                            <p>ច័ន្ទ-សៅរ៍: 8:00 - 17:00</p>
+                    <div class="lesson-content">
+                        <h3>សមីការដឺក្រេទី១</h3>
+                        <p>ដោះស្រាយសមីការដឺក្រេទី១ ដោយប្រើវិធីផ្សេងៗ</p>
+                        <a href="lessons.html#equations" class="btn btn-sm btn-outline">អានបន្ថែម</a>
+                    </div>
+                </div>
+                <div class="lesson-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="lesson-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVjyeC0ofzRll0i9NjpURDi1n2MGI3k0vhrw&s" alt="ធរណីមាត្រ">
+                        <div class="lesson-category">ថ្នាក់ទី៧</div>
+                    </div>
+                    <div class="lesson-content">
+                        <h3>ធរណីមាត្រនៃត្រីកោណ</h3>
+                        <p>សិក្សាអំពីលក្ខណៈ និងទ្រឹស្តីបទផ្សេងៗនៃត្រីកោណ</p>
+                        <a href="lessons.html#geometry" class="btn btn-sm btn-outline">អានបន្ថែម</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="lessons.html" class="btn btn-primary">មើលមេរៀនទាំងអស់</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>សិស្សបស់យើងនិយាយយ៉ាងដូចម្តេច?</h2>
+                <p>ស្តាប់ការបញ្ចេញមតិពីសិស្សដែលបានរៀនជាមួយយើង</p>
+            </div>
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"ការបង្រៀនគឺពិតជាអស្ចារ្យណាស់! ខ្ញុំអាចយល់អំពីគណិតវិទ្យាបានកាន់តែច្បាស់ជាងមុន។"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="សិស្ស">
+                        <div class="author-info">
+                            <h4>វណ្ណារ៉ាត់ សុខហួរ</h4>
+                            <p>សិស្សថ្នាក់ទី៧</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="ឈ្មោះពេញ*" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="អ៊ីមែល*" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="ចំណងជើង">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="សាររបស់អ្នក*" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">ផ្ញើសារ</button>
-                    </form>
-                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" data-aos="fade-up">
+        <div class="container">
+            <div class="cta-content">
+                <h2>ចាប់ផ្តើមរៀនជាមួយយើងថ្ងៃនេះ!</h2>
+                <p>ចុះឈ្មោះឥឡូវនេះដើម្បីទទួលបានការចូលប្រើគ្រប់មេរៀនរបស់យើង</p>
+                <a href="#" class="btn btn-primary btn-lg">ចុះឈ្មោះឥឡូវ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">ហេតុអ្វីគួរជ្រើសរើសយើង?</h2>
+            <div class="features-grid">
+                <a href="lessons.html" class="feature-card clickable-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>មេរៀនពេញលេញ</h3>
+                    <p>មេរៀនដែលរៀបចំដោយអ្នកជំនាញ ងាយស្រួលយល់</p>
+                    <span class="card-link">មើលមេរៀន <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="exercises.html" class="feature-card clickable-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>លំហាត់ច្រើនប្រភេទ</h3>
+                    <p>លំហាត់គ្រប់កម្រិតពីងាយដល់លំបាក</p>
+                    <span class="card-link">ធ្វើលំហាត់ <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="videos.html" class="feature-card clickable-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>វីដេអូពន្យល់</h3>
+                    <p>មើលវីដេអូពន្យល់យ៉ាងច្បាស់</p>
+                    <span class="card-link">មើលវីដេអូ <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Lessons -->
+    <section class="popular-lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">មេរៀនពេញនិយម</h2>
+                <a href="lessons.html" class="view-all">មើលទាំងអស់ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="cards-grid">
+                <!-- Lesson cards will be dynamically loaded here -->
             </div>
         </div>
     </section>
@@ -241,91 +217,28 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <h3>អំពីយើង</h3>
-                    <p>គេហទំព័រគណិតវិទ្យាជាភាសាខ្មែរ ដែលផ្តល់នូវចំណេះដឹង និងជំនាញគណិតវិទ្យាសម្រាប់សិស្សគ្រប់ថ្នាក់រៀន។</p>
-                    <div class="competitor">
-
-
-
-                        <img src="/Images/about/customer.jpg" alt="competitor">
-                        <div class="founder">
-                            <p>Name : Phan Phoun</p>
-                            <p>Age : 20</p>
-                            <p>Gender : Male</p>
-                            <p>Role: Founder of <a href="#about">Khmer Math</a> </p>
-                            <p>Phone : 012345678</p>
-                            <p>Email : <a href="mailto:phan.phoun@gmail.com">phan.phoun@gmail.com</a></p>
-                            
-                            <p>Telegram : <a href="https://t.me/phan.phoun">phan.phoun</a></p>
-                            <p>LinkedIn : <a href="https://www.linkedin.com/in/phan.phoun">phan.phoun</a></p>
-                            <p>Youtube : <a href="https://www.youtube.com/phan.phoun">phan.phoun</a></p>
-                            
-    
-                        </div>
-                       
-                    </div>
+                    <p>គេហទំព័រគណិតវិទ្យាសម្រាប់សិស្សថ្នាក់ទី៧ ដោយអ្នកជំនាញគណិតវិទ្យា</p>
                 </div>
                 <div class="footer-links">
                     <h3>តំណភ្ជាប់</h3>
                     <ul>
-                        <li><a href="#home">ទំព័រដើម</a></li>
-                        <li><a href="#grades">ថ្នាក់រៀន</a></li>
-                        <li><a href="#lessons">មេរៀន</a></li>
-                        <li><a href="#exercises">លំហាត់</a></li>
-                        <li><a href="#about">អំពីយើង</a></li>
-                        <li><a href="#contact">ទំនាក់ទំនង</a></li>
+                        <li><a href="index.html">ទំព័រដើម</a></li>
+                        <li><a href="lessons.html">មេរៀន</a></li>
+                        <li><a href="exercises.html">លំហាត់</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h3>ទំនាក់ទំនង</h3>
-                    <p><i class="fas fa-phone"></i> +855 12 345 678</p>
                     <p><i class="fas fa-envelope"></i> info@khmer-math.edu.kh</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <div class="competition">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-coursera-logo-icon-svg-download-png-3029932.png" alt="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Emblem_of_the_Ministry_of_Education%2C_Youth_and_Sport_%28Cambodia%29.svg/573px-Emblem_of_the_Ministry_of_Education%2C_Youth_and_Sport_%28Cambodia%29.svg.png" alt="">
-                        <img src="https://lh3.googleusercontent.com/_CrDHaAieEAaiQZ3YlZ3F-OH-idVHm-RbpXLARpOl-Px4Q_Mb0ap0dzqzuztaj5AT0WX" alt="">
-                        <img src="https://play-lh.googleusercontent.com/7r12-ubztJ9DDsIOwZv6SBjC-WioghrbMTWTNoXORhMl3WO7FrT3gBE2prxcToNw25U
-                        " alt="">
-                    </div>
+                    <p><i class="fas fa-phone"></i> +855 12 345 678</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 គណិតវិទ្យា - គេហទំព័រគណិតវិទ្យាជាភាសាខ្មែរ | រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
+                <p>&copy; 2025 គណិតវិទ្យា. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
             </div>
         </div>
     </footer>
 
-    <!-- Navbar JavaScript placed at end for performance -->
-    <script src="js/navbar.js"></script>
-    
-    <!-- Floating Chatbot Widget -->
-    <div class="chatbot" aria-live="polite">
-        <div class="chatbot-window" role="dialog" aria-modal="false" aria-hidden="true">
-            <div class="chatbot-header">
-                <div class="chatbot-title"><i class="fas fa-robot"></i> ជំនួយការ</div>
-                <button class="chatbot-close" aria-label="Close chatbot" title="Close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="chatbot-messages" id="chatbotMessages">
-                <div class="chatbot-message bot">សួស្តី! ខ្ញុំអាចជួយអ្នកស្វែងរកមេរៀន ឬថ្នាក់ណាមួយ។</div>
-            </div>
-            <form class="chatbot-input" id="chatbotForm" autocomplete="off">
-                <input type="text" id="chatbotText" placeholder="សួរខ្ញុំអ្វីមួយ..." aria-label="Chat message">
-                <button type="submit" class="chatbot-send" aria-label="Send message">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </form>
-        </div>
-        <button class="chatbot-toggle" aria-label="Open chat" aria-expanded="false" aria-controls="chatbotMessages">
-            <i class="fas fa-comment"></i>
-             
-        </button>
-    </div>
-
-    <!-- Chatbot JavaScript -->
-    <script src="js/chatbot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

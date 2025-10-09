@@ -1,121 +1,73 @@
-# Khmer Math Education Website
+# គេហទំព័រគណិតវិទ្យា (Khmer Math Education Platform)
 
-An educational website for math learners from Grade 7 to Grade 12.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Made with HTML, CSS & JavaScript](https://img.shields.io/badge/Made%20with-HTML%2C%20CSS%20%26%20JavaScript-1f425f.svg)](https://www.w3.org/)
 
-## ✨ Features
+គេហទំព័រគណិតវិទ្យាសម្រាប់សិស្សថ្នាក់ទី៧ ដែលផ្តល់នូវមេរៀន លំហាត់ និងវីដេអូបង្រៀនដែលងាយស្រួលយល់។
 
-- Fully responsive design
-- Dedicated pages for each grade (7–12)
-- Organized lessons and exercises
-- Modern, clean UI
-- Khmer language support (Kantumruy Pro font)
-- Mobile-friendly responsive navbar
-- Dropdown menu for grade navigation
-- Floating chatbot at the bottom-right corner
+## ✨ លក្ខណៈពិសេស
 
-## 🚀 Tech Stack
+- 📚 មេរៀនគណិតវិទ្យាសម្រាប់ថ្នាក់ទី៧
+- 📝 លំហាត់គណិតវិទ្យាជាមួយនឹងដំណោះស្រាយលម្អិត
+- 📹 វីដេអូបង្រៀនដែលងាយស្រួលយល់
+- 📱 គាំទ្រគ្រប់អេក្រង់ (ទូរស័ព្ទ, ថេប្លេត, កុំព្យូទ័រ)
+- 🎨 ចូលចិត្តភ្នែក និងងាយស្រួលប្រើ
 
-- **Frontend**:
-  - HTML5, CSS3, JavaScript
-  - Sass/SCSS for styling
-  - Font Awesome for icons
-  - Google Fonts (Kantumruy Pro)
-- **Development Tools**:
-  - Node.js & npm
-  - Sass compiler
-  - Live reload for development
+## 🚀 របៀបដំឡើង
 
-## 🛠️ Getting Started
-
-### Prerequisites
-
-- Node.js v14+ (or newer)
-- npm (bundled with Node.js)
-
-### Installation
-
-1) Clone the repository:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/phanphoun/khmer-math-website-project.git
-   cd khmer-math-website-project
+   git clone https://github.com/yourusername/khmer-math-website.git
    ```
 
-2) Install dependencies:
+2. Navigate to the project directory:
    ```bash
-   npm install
+   cd khmer-math-website
    ```
 
-3) Build SCSS to CSS:
-   ```bash
-   npm run build-css
-   ```
+3. Open `index.html` in your favorite web browser.
 
-### Development
+## 🛠️ បច្ចេកវិទ្យាដែលប្រើ
 
-Start the dev workflow with auto-rebuild for SCSS:
+- **Frontend:**
+  - HTML5
+  - CSS3 (with Flexbox and Grid)
+  - JavaScript (Vanilla)
+  - [Font Awesome](https://fontawesome.com/) for icons
+  - [AOS](https://michalsnik.github.io/aos/) for scroll animations
 
-```bash
-npm start
-```
-
-This watches SCSS files and rebuilds CSS automatically.
-
-## 📁 Project Structure
+## 📂 រចនាសម្ព័ន្ធឯកសារ
 
 ```
-├── index.html          # Main entry page
-├── main.css            # Compiled CSS
-├── main.css.map        # Source map for CSS debugging
+khmer-math-website/
+├── index.html          # ទំព័រដើម
+├── about.html          # ទំព័រអំពីយើង
+├── lessons.html        # ទំព័រមេរៀន
+├── exercises.html      # ទំព័រលំហាត់
+├── videos.html         # ទំព័រវីដេអូ
+├── css/
+│   └── style.css       # ស្តាយស៊ីចម្បង
 ├── js/
-│   ├── navbar.js       # Responsive navbar logic
-│   └── chatbot.js      # Floating chatbot (toggle, messages, quick help)
-├── styles/             # SCSS sources
-│   ├── main.scss
-│   ├── _variables.scss
-│   ├── _mixins.scss
-│   ├── _header.scss
-│   ├── _about-contact.scss
-│   ├── _grade-pages.scss
-│   └── components/
-│       └── _navbar.scss
-├── grade/              # Grade-specific pages
-│   ├── grade7.html
-│   ├── grade8.html
-│   ├── grade9.html
-│   ├── grade10.html
-│   ├── grade11.html
-│   └── grade12.html
-└── package.json
+│   ├── main.js         # JavaScript សំខាន់ៗ
+│   └── exercises.js    # JavaScript សម្រាប់ទំព័រលំហាត់
+└── images/             # រូបភាពដែលប្រើក្នុងគេហទំព័រ
 ```
 
-## 🏗️ Production Build
+## 🤝 ចូលរួមអភិវឌ្ឍ
 
-Build CSS for production (minified via the configured script):
+ការរួមចំណែកគឺត្រូវបានគេស្វាគមន៍! សូមមេត្តាអាន [CONTRIBUTING.md](CONTRIBUTING.md) សម្រាប់ព័ត៌មានលម្អិត។
 
-```bash
-npm run build-css
-```
+## 📄 អាជ្ញាប័ណ្ណ
 
-## 💬 Chatbot
+គម្រោងនេះត្រូវបានអនុញ្ញាតិដោយ [MIT License](LICENSE)។
 
-- Placement: bottom-right on home and grade pages
-- Capabilities: open/close chat window, send messages, keyword-based quick replies
-- Behavior:
-  - Recognizes Khmer and English keywords for grades (7–12), e.g., “ថ្នាក់ទី៩”, “grade 9”
-  - Points users to “Exercises” and “Contact” sections
-- Implementation: fully client-side (no external services)
+## 🙏 អរគុណ
 
-Extend later by wiring the submit handler in `js/chatbot.js` to an API or AI service.
+សូមអរគុណចំពោះការគាំទ្ររបស់អ្នក! បើអ្នកមានសំណួរ ឬយោបល់ណាមួយ សូមមេត្តាទាក់ទងមកយើង។
 
-## 🤝 Contributing
+---
 
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## 📄 License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## 📞 Contact
-
-- Email: [phanphoun855@gmail.com](mailto:phanphoun855@gmail.com)
-- GitHub: [phanphoun](https://github.com/phanphoun)
+<div align="center">
+  <p>Made with ❤️ in Cambodia</p>
+  <p>© 2023 Khmer Math Education Platform. All rights reserved.</p>
+</div>

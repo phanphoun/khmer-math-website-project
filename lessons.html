@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>មេរៀនគណិតវិទ្យា - ថ្នាក់ទី៧</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/math-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-square-root-alt"></i>
+                <span>គណិតវិទ្យា</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">ទំព័រដើម</a></li>
+                    <li><a href="lessons.html" class="active">មេរៀន</a></li>
+                    <li><a href="exercises.html">លំហាត់</a></li>
+                    <li><a href="about.html">អំពីយើង</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lessons Hero -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">មេរៀនគណិតវិទ្យា</h1>
+            <p data-aos="fade-up" data-aos-delay="100">ស្វែងយល់អំពីមេរៀនគណិតវិទ្យាទាំងអស់សម្រាប់ថ្នាក់ទី៧</p>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section class="lessons-section section-padding">
+        <div class="container">
+            <!-- Search and Filter -->
+            <div class="lessons-filter" data-aos="fade-up">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchLessons" placeholder="ស្វែងរកមេរៀន...">
+                </div>
+                <div class="filter-options">
+                    <select id="chapterFilter" class="filter-select">
+                        <option value="">ជ្រើសរើសមេរៀន</option>
+                        <option value="chapter1">មេរៀនទី១: ចំនួនគត់</option>
+                        <option value="chapter2">មេរៀនទី២: ប្រភាគ</option>
+                        <option value="chapter3">មេរៀនទី៣: ទសភាគ</option>
+                        <option value="chapter4">មេរៀនទី៤: សមីការ</option>
+                    </select>
+                    <select id="difficultyFilter" class="filter-select">
+                        <option value="">កម្រិតលំបាក</option>
+                        <option value="easy">ងាយ</option>
+                        <option value="medium">មធ្យម</option>
+                        <option value="hard">ពិបាក</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Lessons Grid -->
+            <div class="lessons-grid" id="lessonsContainer">
+                <!-- Lesson 1 -->
+                <div class="lesson-card" data-chapter="chapter1" data-difficulty="easy" data-aos="fade-up">
+                    <div class="lesson-card-inner">
+                        <div class="lesson-image">
+                            <img src="https://via.placeholder.com/400x225" alt="ចំនួនគត់">
+                            <span class="lesson-difficulty easy">ងាយ</span>
+                        </div>
+                        <div class="lesson-content">
+                            <div class="lesson-meta">
+                                <span class="lesson-chapter">មេរៀនទី១</span>
+                                <span class="lesson-duration"><i class="far fa-clock"></i> ៣០ នាទី</span>
+                            </div>
+                            <h3>ចំនួនគត់</h3>
+                            <p>សិក្សាអំពីចំនួនគត់ និងប្រតិបត្តិការលើវា</p>
+                            <div class="lesson-footer">
+                                <div class="lesson-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 75%"></div>
+                                    </div>
+                                    <span>75% បានរៀនរួច</span>
+                                </div>
+                                <a href="lesson-detail.html?id=1" class="btn btn-sm btn-outline">ចាប់ផ្តើមរៀន</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson 2 -->
+                <div class="lesson-card" data-chapter="chapter2" data-difficulty="medium" data-aos="fade-up" data-aos-delay="100">
+                    <div class="lesson-card-inner">
+                        <div class="lesson-image">
+                            <img src="https://via.placeholder.com/400x225" alt="ប្រភាគ">
+                            <span class="lesson-difficulty medium">មធ្យម</span>
+                        </div>
+                        <div class="lesson-content">
+                            <div class="lesson-meta">
+                                <span class="lesson-chapter">មេរៀនទី២</span>
+                                <span class="lesson-duration"><i class="far fa-clock"></i> ៤៥ នាទី</span>
+                            </div>
+                            <h3>ប្រភាគ</h3>
+                            <p>សិក្សាអំពីប្រភាគ និងប្រតិបត្តិការលើប្រភាគ</p>
+                            <div class="lesson-footer">
+                                <div class="lesson-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 40%"></div>
+                                    </div>
+                                    <span>40% បានរៀនរួច</span>
+                                </div>
+                                <a href="lesson-detail.html?id=2" class="btn btn-sm btn-outline">ចាប់ផ្តើមរៀន</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson 3 -->
+                <div class="lesson-card" data-chapter="chapter3" data-difficulty="hard" data-aos="fade-up" data-aos-delay="200">
+                    <div class="lesson-card-inner">
+                        <div class="lesson-image">
+                            <img src="https://via.placeholder.com/400x225" alt="ទសភាគ">
+                            <span class="lesson-difficulty hard">ពិបាក</span>
+                        </div>
+                        <div class="lesson-content">
+                            <div class="lesson-meta">
+                                <span class="lesson-chapter">មេរៀនទី៣</span>
+                                <span class="lesson-duration"><i class="far fa-clock"></i> ៦០ នាទី</span>
+                            </div>
+                            <h3>ទសភាគ</h3>
+                            <p>សិក្សាអំពីចំនួនទសភាគ និងការប្រើប្រាស់</p>
+                            <div class="lesson-footer">
+                                <div class="lesson-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 20%"></div>
+                                    </div>
+                                    <span>20% បានរៀនរួច</span>
+                                </div>
+                                <a href="lesson-detail.html?id=3" class="btn btn-sm btn-outline">ចាប់ផ្តើមរៀន</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson 4 -->
+                <div class="lesson-card" data-chapter="chapter4" data-difficulty="medium" data-aos="fade-up" data-aos-delay="300">
+                    <div class="lesson-card-inner">
+                        <div class="lesson-image">
+                            <img src="https://via.placeholder.com/400x225" alt="សមីការ">
+                            <span class="lesson-difficulty medium">មធ្យម</span>
+                        </div>
+                        <div class="lesson-content">
+                            <div class="lesson-meta">
+                                <span class="lesson-chapter">មេរៀនទី៤</span>
+                                <span class="lesson-duration"><i class="far fa-clock"></i> ៥០ នាទី</span>
+                            </div>
+                            <h3>សមីការដឺក្រេទី១</h3>
+                            <p>ដោះស្រាយសមីការដឺក្រេទី១ ដោយប្រើវិធីផ្សេងៗ</p>
+                            <div class="lesson-footer">
+                                <div class="lesson-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 10%"></div>
+                                    </div>
+                                    <span>10% បានរៀនរួច</span>
+                                </div>
+                                <a href="lesson-detail.html?id=4" class="btn btn-sm btn-outline">ចាប់ផ្តើមរៀន</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson 5 -->
+                <div class="lesson-card" data-chapter="chapter5" data-difficulty="easy" data-aos="fade-up" data-aos-delay="400">
+                    <div class="lesson-card-inner">
+                        <div class="lesson-image">
+                            <img src="https://via.placeholder.com/400x225" alt="ធរណីមាត្រ">
+                            <span class="lesson-difficulty easy">ងាយ</span>
+                        </div>
+                        <div class="lesson-content">
+                            <div class="lesson-meta">
+                                <span class="lesson-chapter">មេរៀនទី៥</span>
+                                <span class="lesson-duration"><i class="far fa-clock"></i> ៤០ នាទី</span>
+                            </div>
+                            <h3>ធរណីមាត្រនៃត្រីកោណ</h3>
+                            <p>សិក្សាអំពីលក្ខណៈ និងទ្រឹស្តីបទផ្សេងៗនៃត្រីកោណ</p>
+                            <div class="lesson-footer">
+                                <div class="lesson-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 5%"></div>
+                                    </div>
+                                    <span>5% បានរៀនរួច</span>
+                                </div>
+                                <a href="lesson-detail.html?id=5" class="btn btn-sm btn-outline">ចាប់ផ្តើមរៀន</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" data-aos="fade-up">
+                <a href="#" class="page-nav disabled"><i class="fas fa-chevron-left"></i> ថយក្រោយ</a>
+                <div class="page-numbers">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#">10</a>
+                </div>
+                <a href="#" class="page-nav">បន្ទាប់ <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Tips Section -->
+    <section class="study-tips section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>គន្លឹះសម្រាប់រៀនគណិតវិទ្យាឲ្យមានប្រសិទ្ធភាព</h2>
+                <p>រកឃើញវិធីដ៏ប្រសើរបំផុតក្នុងការសិក្សាគណិតវិទ្យា</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card" data-aos="fade-up">
+                    <div class="tip-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>គ្រប់គ្រងពេលវេលាឲ្យបានល្អ</h3>
+                    <p>រៀនជាប្រចាំរៀងរាល់ថ្ងៃឲ្យបានយ៉ាងហោចណាស់ ៣០-៦០ នាទី</p>
+                </div>
+                <div class="tip-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tip-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>ធ្វើលំហាត់ឲ្យបានច្រើន</h3>
+                    <p>ហ្វឹកហាត់ធ្វើលំហាត់ជាច្រើនដើម្បីឲ្យយល់ដឹងច្បាស់</p>
+                </div>
+                <div class="tip-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tip-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>សួរនៅពេលមានបញ្ហា</h3>
+                    <p>មិនយល់អ្វី ត្រូវសួរគ្រូឬមិត្តភក្តិភ្លាម</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>អំពីយើង</h3>
+                    <p>គេហទំព័រគណិតវិទ្យាសម្រាប់សិស្សថ្នាក់ទី៧</p>
+                </div>
+                <div class="footer-links">
+                    <h3>តំណភ្ជាប់</h3>
+                    <ul>
+                        <li><a href="index.html">ទំព័រដើម</a></li>
+                        <li><a href="lessons.html">មេរៀន</a></li>
+                        <li><a href="exercises.html">លំហាត់</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>ទំនាក់ទំនង</h3>
+                    <p><i class="fas fa-envelope"></i> info@khmer-math.edu.kh</p>
+                    <p><i class="fas fa-phone"></i> +855 12 345 678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 គណិតវិទ្យា. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lessons.js"></script>
+</body>
+</html>
